@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Der K-E. Song</title>
+    <title>Simple MP3 Player</title>
+    <style>
+        body {
+            background-color: #E1F4FE; /* Lighter Green */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .center-content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .center-content img, .center-content audio {
+            display: block;
+            margin: 0 auto;
+        }
+        .download-button {
+            display: block;
+			margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #FE792D; /* Green */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+			width: 250px;
+        }
+        .download-button:hover {
+            background-color: #FE6B2D; /* Darker Green */
+        }
+		.message {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #333;
+            font-family: 'Tahoma', sans-serif;
+			font-weight: bold;
+        }
+		.message2 {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+            font-family: 'Tahoma', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content">
+        <img src="image.jpg" alt="Cover Image" style="width:300px;height:auto;">
+		<p class="message">Aperol in der Hand</p>
+		<p class="message2">Techno Version</p>
+        <audio controls>
+            <source src="Aperol in der Hand (Techno Version).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+		<p class="message2">Pop Version</p>
+		<audio controls>
+			<source src="Aperol in der Hand (Pop Version).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <a href="Aperol in der Hand (Techno Version).mp3" download="Aperol in der Hand (Techno Version).mp3" class="download-button">Techno Version Herunterladen</a>
+		<a href="Aperol in der Hand (Pop Version).mp3" download="Aperol in der Hand (Pop Version).mp3" class="download-button">Pop Version Herunterladen</a>
+    </div> 
+</body>
+</html>
